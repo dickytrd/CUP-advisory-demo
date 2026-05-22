@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 39563">
+<g clip-path="url(#clip0_4033_776)">
+<rect x="2" y="2" width="50" height="50" rx="5" fill="var(--fill-0, white)"/>
+<g id="Ellipse 19" filter="url(#filter0_f_4033_776)">
+<circle cx="27" cy="81" r="50" fill="var(--fill-0, #EDEDED)"/>
+</g>
+</g>
+<rect x="1" y="1" width="52" height="52" rx="6" stroke="var(--stroke-0, #EDEDED)" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_f_4033_776" x="-39.5" y="14.5" width="133" height="133" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="8.25" result="effect1_foregroundBlur_4033_776"/>
+</filter>
+<clipPath id="clip0_4033_776">
+<rect x="2" y="2" width="50" height="50" rx="5" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 105.882 83.4839" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_4043_8559" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-7" width="108" height="91">
+<path id="Vector" d="M8.14489 47.3141L28.8322 70.6935C30.1936 72.2331 31.889 73.4491 33.7921 74.2509C35.6952 75.0527 37.7569 75.4197 39.8235 75.3243C41.89 75.229 43.9082 74.6739 45.7275 73.7004C47.5467 72.7268 49.1202 71.36 50.3305 69.7018L99.7739 2.03593" stroke="var(--stroke-0, #0A3537)" stroke-width="16.2896" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_4043_8559)">
+<g id="Ellipse 17" filter="url(#filter0_f_4043_8559)">
+<circle cx="26.4702" cy="79.4118" r="42.7602" fill="var(--fill-0, #B4D8C6)"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_4043_8559" x="-52.9416" y="0" width="158.824" height="158.824" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="18.3258" result="effect1_foregroundBlur_4043_8559"/>
+</filter>
+</defs>
+</svg>
