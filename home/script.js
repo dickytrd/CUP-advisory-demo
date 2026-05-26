@@ -146,6 +146,37 @@
     });
   }
 
+  function initServicesCardLinkLine() {
+    if (typeof gsap === 'undefined') return;
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+
+    var links = document.querySelectorAll('.services_card_link');
+    links.forEach(function (link) {
+      var line = link.querySelector('.services_card_link_line');
+      if (!line) return;
+
+      var isAnimating = false;
+
+      link.addEventListener('mouseenter', function () {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        var tl = gsap.timeline({
+          onComplete: function () {
+            gsap.set(line, { scaleX: 1, transformOrigin: 'right center' });
+            isAnimating = false;
+          }
+        });
+
+        tl.set(line, { scaleX: 1, transformOrigin: 'right center' });
+        tl.to(line, { scaleX: 0, duration: 0.32, ease: 'power2.in' });
+        tl.set(line, { transformOrigin: 'left center' });
+        tl.to(line, { scaleX: 1, duration: 0.36, ease: 'power2.out' });
+      });
+    });
+  }
+
   function initTitleItalicReveal() {
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
     var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -154,7 +185,7 @@
     gsap.registerPlugin(ScrollTrigger);
 
     var italics = document.querySelectorAll(
-      '.hero_title_italic, .services_title_italic, .statement_title_italic, .feature_title_italic, .trust_title_italic'
+      '.hero_title_italic, .services_title_italic, .statement_title_italic, .feature_title_italic, .trust_title_italic, .cta_title_italic'
     );
 
     italics.forEach(function (el) {
@@ -367,6 +398,7 @@
     initStatementCtaGlow();
     initHeroCtaGlow();
     initTrustCtaGlow();
+    initServicesCardLinkLine();
     initTitleItalicReveal();
     initTrustStatCount();
     initFooterWordmarkSplit();
